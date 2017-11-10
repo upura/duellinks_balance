@@ -42,9 +42,9 @@ def converRGBToCollection(img_data):
     pred = list(pred)
     for i in range(len(pred)):
         pred[i].sort()
-        pred[i] = str(pred[i])    
+        pred[i] = str(pred[i])
     counter = Counter(pred)
     createBarplot(counter)
 
 imgImport()
-converRGBToCollection(img_data)   
+converRGBToCollection(img_data)

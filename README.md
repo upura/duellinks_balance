@@ -15,5 +15,5 @@
 https://github.com/upura/duellinks_balance/blob/master/demo_duellinks_balance.ipynb
 
 # スクリーンショット募集
-データ量が大事なので、同条件でのスクリーンショットを下記フォルダにアップロードいただけると大変ありがたいです。
-https://drive.google.com/drive/folders/1N4kV_Mu0qq--IEJO0EwoLKBk4ygD_r3M?usp=sharing
+~~データ量が大事なので、同条件でのスクリーンショットを下記フォルダにアップロードいただけると大変ありがたいです。~~
+~~https://drive.google.com/drive/folders/1N4kV_Mu0qq--IEJO0EwoLKBk4ygD_r3M?usp=sharing~~

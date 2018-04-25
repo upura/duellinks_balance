@@ -1,19 +1,22 @@
-デュエルリンクスのスキル「バランス」のバラツキ調査
+Investigation of Randomness of Duellinks skill "Balance"
 ===
-2017年11月6日のアップデートで、スキル「バランス」の効果が調整され、一定のランダム性が付与されたそうです。ここでは初期手札配布画面のスクリーンショットから自動的にモンスター・魔法・罠の枚数を数えるプログラムを用いて、「バランス」のバラツキ調査を実施します。
+In the update on November 6, 2017, the effect of the skill "balance" was adjusted, and it seems that certain randomness was given. The aim of this investigation is to reveal the randomness by using python script that automatically counts the number of monsters, magic and trap from the screenshot of the initial hand.
 
-# 概要
-モンスター10枚・魔法5枚・罠5枚デッキで「バランス」を用いた際の初期手札配布画面でスクリーンショットを撮り「img」フォルダ内に保存します。「img」フォルダ内に配置した全ての画像について、duellinks_balance.pyを実行すると、自動的にモンスター・魔法・罠の枚数を数え、割合を導出します。
+# Description
+Deck contains 10 monsters, 5 magic and 5 traps (Total 20 cards). Duels are manually repeated and in each deul a screenshot of the initial hand is taken.
 
-# 手法
-1. 画像から、手札の1枚ずつの領域を取り出す
-1. それぞれの領域内のRGB値の平均を導出し特徴量とする
-1. 全てのデータ（特徴量＋各ラベル）からKmeans法でモンスター・魔法・罠に分類する
-1. 集計して棒グラフを出力する
+By executing "duellinks_balance.py", the number of monster, magic and trap are automatically counted for all images placed in the "img" folder, and the distribution is automatically calculated.
 
-# 画像処理のイメージ
+# Method of Image Process
+1. Extract area of 4 cards from each image
+1. Difine an average of the RGB values in each region as a feature amount
+1. Categorize all data into monster, magic and trap by using K-means
+1. Calculation and show graph
+
+The process can be seen in the following link.
+
 https://github.com/upura/duellinks_balance/blob/master/demo_duellinks_balance.ipynb
 
-# スクリーンショット募集
-~~データ量が大事なので、同条件でのスクリーンショットを下記フォルダにアップロードいただけると大変ありがたいです。~~
-~~https://drive.google.com/drive/folders/1N4kV_Mu0qq--IEJO0EwoLKBk4ygD_r3M?usp=sharing~~
+# Japanese Blog
+日本語でのブログはこちら/Japanese version blog
+https://upura.hatenablog.com/entry/2017/11/10/081635
